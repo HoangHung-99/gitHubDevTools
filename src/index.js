@@ -4,4 +4,4 @@ import "./App.css"
 
 import TodoApp from "./components/TodoApp";
 
-ReactDOM.render(<TodoApp />, document.getElementById("root"));  
+ReactDOM.render(<TodoApp />, document.getElementById("root")); 
