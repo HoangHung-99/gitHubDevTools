@@ -5,12 +5,12 @@
             <form>
                 <div className="input-signin">
                     <label>Username:</label>
-                    <input type="text" placeholder="Tên đăng nhập" name="username"
+                    <input type="text" id="lblUsername" placeholder="Tên đăng nhập" name="username"
                         className="form-control w-100"></input>
                 </div>
                 <div className="input-signin">
                     <label>Mật khẩu:</label>
-                    <input type="password" id="password" placeholder="Password" name="password"
+                    <input type="password" id="lblPassword" placeholder="Password" name="password"
                         className="form-control w-100" />
                 </div>
                 <div className="btn-signIN">
@@ -18,6 +18,16 @@
                         Đăng nhập
                     </button>
                 </div>
+                <script>
+                    const loginBtn = () => {
+                        var username= document.getElementById("lblUsername").value;
+                        var password= document.getElementById("lblPassword").value;
+                        if(username == 'admin' && password=='admin')
+                            alert('success');
+                        else
+                            alert('failed');
+                        }
+                </script>
             </form>
         </div>
     </div>
